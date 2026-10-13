@@ -10,7 +10,7 @@ export function today(d = new Date()) {
   return `${y}-${m}-${day}`;
 }
 export function addDays(date: string, n: number) {
-  const [y, m, d] = date.split("-").map(Number);
+  const [y = 0, m = 1, d = 1] = date.split("-").map(Number);
   return today(new Date(y, m - 1, d + n));
 }
 
@@ -35,7 +35,7 @@ export function buildQueue(cards: Card[], deck: string) {
     const sorter = (a: Card, b: Card) =>
       dueDate(a).localeCompare(dueDate(b)) || a.created.localeCompare(b.created);
     const due = inDeck
-      .filter((c) => states[c.id] && states[c.id].due <= t)
+      .filter((c) => (states[c.id]?.due ?? "9999") <= t)
       .sort(sorter)
       .slice(0, Math.max(0, settings.reviewCap - revDone));
     const fresh = inDeck
@@ -83,7 +83,7 @@ export function grade(card: Card, result: "right" | "wrong", missed: string[], m
     };
     return {
       ...d,
-      states: { ...d.states, [card.id]: { step, due: addDays(t, LADDER[step]), last: result, updatedAt: now } },
+      states: { ...d.states, [card.id]: { step, due: addDays(t, LADDER[step] ?? 1), last: result, updatedAt: now } },
       reviews: [...d.reviews, review],
       unsynced: [...d.unsynced, review.id],
       unsyncedStates: [...new Set([...d.unsyncedStates, card.id])],
