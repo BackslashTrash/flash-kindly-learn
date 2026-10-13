@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      card_state: {
+        Row: {
+          card_id: string
+          due_date: string
+          last_result: string | null
+          step: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          card_id: string
+          due_date: string
+          last_result?: string | null
+          step?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Update: {
+          card_id?: string
+          due_date?: string
+          last_result?: string | null
+          step?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      reviews: {
+        Row: {
+          card_id: string
+          deck: string
+          id: string
+          missed_keywords: string[]
+          mode: string
+          result: string
+          reviewed_at: string
+          user_id: string
+        }
+        Insert: {
+          card_id: string
+          deck: string
+          id: string
+          missed_keywords?: string[]
+          mode: string
+          result: string
+          reviewed_at?: string
+          user_id?: string
+        }
+        Update: {
+          card_id?: string
+          deck?: string
+          id?: string
+          missed_keywords?: string[]
+          mode?: string
+          result?: string
+          reviewed_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
