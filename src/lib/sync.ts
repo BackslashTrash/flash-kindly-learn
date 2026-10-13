@@ -29,14 +29,10 @@ export async function sync() {
     const sts = d.unsyncedStates.filter((id) => d.states[id]);
     if (sts.length) {
       const { error } = await supabase.from("card_state").upsert(
-        sts.map((id) => ({
-          user_id: uid,
-          card_id: id,
-          step: d.states[id].step,
-          due_date: d.states[id].due,
-          last_result: d.states[id].last,
-          updated_at: d.states[id].updatedAt,
-        })),
+        sts.map((id) => {
+          const st = d.states[id]!;
+          return { user_id: uid, card_id: id, step: st.step, due_date: st.due, last_result: st.last, updated_at: st.updatedAt };
+        }),
       );
       if (error) throw error;
     }

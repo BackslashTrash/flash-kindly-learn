@@ -47,7 +47,7 @@ function Stats() {
               ))}
             </div>
             <div className="mt-1 flex justify-between text-xs text-muted-foreground">
-              <span>{days[0].slice(5)}</span>
+              <span>{days[0]?.slice(5)}</span>
               <span>today</span>
             </div>
           </section>

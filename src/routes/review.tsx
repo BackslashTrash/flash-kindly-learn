@@ -8,7 +8,7 @@ import { useSpeech } from "@/lib/speech";
 import { sync } from "@/lib/sync";
 
 export const Route = createFileRoute("/review")({
-  validateSearch: (s: Record<string, unknown>) => ({ deck: typeof s.deck === "string" ? s.deck : "all" }),
+  validateSearch: (s: Record<string, unknown>) => ({ deck: typeof s["deck"] === "string" ? (s["deck"] as string) : "all" }),
   head: () => ({
     meta: [
       { title: "Recall — Review" },
@@ -114,10 +114,10 @@ function CardView({ card, left }: { card: Card; left: number }) {
 
       <div
         className={`brut bg-card p-5 ${revealed ? "flip-in" : ""}`}
-        onTouchStart={(e) => (touch.current = e.touches[0].clientX)}
+        onTouchStart={(e) => (touch.current = e.touches[0]?.clientX ?? null)}
         onTouchEnd={(e) => {
           if (!revealed || touch.current == null) return;
-          const dx = e.changedTouches[0].clientX - touch.current;
+          const dx = (e.changedTouches[0]?.clientX ?? touch.current) - touch.current;
           if (dx > 80) finish("right");
           else if (dx < -80) finish("wrong");
           touch.current = null;
@@ -295,7 +295,7 @@ function SessionEnd({ deck }: { deck: string }) {
     );
   }
   const right = revs.filter((r) => r.result === "right").length;
-  const last = revs[revs.length - 1].at;
+  const last = revs[revs.length - 1]?.at ?? s.startedAt;
   const secs = Math.round((new Date(last).getTime() - new Date(s.startedAt).getTime()) / 1000);
   const wrong = revs.filter((r) => r.result === "wrong");
   const summary = [
