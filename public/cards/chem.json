@@ -1,5 +1,209 @@
 [
- {"id":"chem-2026-10-08-01","deck":"chem","unit":"Structure and Properties","topic":"Electron affinity exceptions","type":"because","prompt":"Why does nitrogen have a lower electron affinity than carbon?","answer":"N's 2p is half filled, so the added electron must pair in an occupied orbital. Electron-electron repulsion means less energy is released. C has an empty 2p orbital, so the electron enters without pairing.","keywords":["half filled","pair","repulsion","less energy released"],"source":"Notes 2026-09-15","created":"2026-10-08"},
- {"id":"chem-2026-10-08-02","deck":"chem","unit":"Structure and Properties","topic":"Lattice energy","type":"because","prompt":"Which has the higher melting point, NaF or CaO? Justify.","answer":"CaO, because Ca2+ and O2- have double the charge of Na+ and F-, so the electrostatic attraction is stronger and the lattice energy is higher.","keywords":["CaO","2+","2-","stronger attraction","lattice energy"],"source":"Unit 1 test Q23","created":"2026-10-08"},
- {"id":"chem-2026-10-06-01","deck":"chem","unit":"Organic","topic":"Naming tie rule","type":"worked","prompt":"Name CH3-CH2-CH(CH3)-CH2-CH(CH2CH3)-CH2-CH3 and state the rule that decides the numbering.","answer":"3-ethyl-5-methylheptane. Both directions give 3 and 5, so the substituent first in the alphabet (ethyl) gets the lower number.","keywords":["3-ethyl-5-methylheptane","alphabetical","tie"],"source":"Notes 2026-10-06","created":"2026-10-06"}
+ {
+  "id": "chem-2026-10-08-01",
+  "deck": "chem",
+  "unit": "Structure and Properties",
+  "topic": "Electron affinity exceptions",
+  "type": "because",
+  "prompt": "Why does nitrogen have a lower electron affinity than carbon?",
+  "answer": "N's 2p is half filled, so the added electron must pair in an occupied orbital. Electron-electron repulsion means less energy is released. C has an empty 2p orbital, so the electron enters without pairing.",
+  "keywords": [
+   "half filled",
+   "pair",
+   "repulsion",
+   "less energy released"
+  ],
+  "source": "Unit 1 test Q21",
+  "created": "2026-10-08"
+ },
+ {
+  "id": "chem-2026-10-08-02",
+  "deck": "chem",
+  "unit": "Structure and Properties",
+  "topic": "Lattice energy",
+  "type": "because",
+  "prompt": "Which has the higher melting point, NaF or CaO? Justify.",
+  "answer": "CaO, because Ca2+ and O2- have double the charge of Na+ and F-, so the electrostatic attraction is stronger and the lattice energy is higher.",
+  "keywords": [
+   "CaO",
+   "2+",
+   "2-",
+   "stronger attraction",
+   "lattice energy"
+  ],
+  "source": "Unit 1 test Q23",
+  "created": "2026-10-08"
+ },
+ {
+  "id": "chem-2026-10-08-03",
+  "deck": "chem",
+  "unit": "Structure and Properties",
+  "topic": "Hybrid orbital geometry",
+  "type": "because",
+  "prompt": "Why do nitrogen's four sp3 hybrid orbitals in NH3 point to the corners of a tetrahedron?",
+  "answer": "The hybrid orbitals spread as far apart as possible so they do not overlap, which minimizes electron-electron repulsion. Four orbitals as far apart as possible = tetrahedral.",
+  "keywords": [
+   "hybrid orbitals",
+   "do not overlap",
+   "electron-electron repulsion",
+   "tetrahedral"
+  ],
+  "source": "Unit 1 test Q22b",
+  "created": "2026-10-08"
+ },
+ {
+  "id": "chem-2026-10-08-04",
+  "deck": "chem",
+  "unit": "Structure and Properties",
+  "topic": "Orbital overlap in NH3",
+  "type": "sketch",
+  "prompt": "Sketch nitrogen's hybrid orbitals in NH3 and show which orbitals overlap.",
+  "answer": "Four sp3 lobes in a tetrahedral arrangement. Three lobes each overlap a hydrogen 1s orbital (sigma bonds). The fourth sp3 lobe holds nitrogen's lone pair, no hydrogen.",
+  "keywords": [
+   "four sp3",
+   "three H 1s",
+   "sigma",
+   "lone pair"
+  ],
+  "source": "Unit 1 test Q22c",
+  "created": "2026-10-08"
+ },
+ {
+  "id": "chem-2026-10-08-05",
+  "deck": "chem",
+  "unit": "Structure and Properties",
+  "topic": "Electron vs molecular geometry",
+  "type": "because",
+  "prompt": "KrF2: give the electron geometry and the molecular geometry, and explain why they differ.",
+  "answer": "5 electron groups on Kr (2 bonds, 3 lone pairs): trigonal bipyramidal electron geometry, sp3d. The 3 lone pairs sit in the equatorial positions. Molecular geometry counts only atoms, so the shape is linear, 180 degrees.",
+  "keywords": [
+   "5 electron groups",
+   "trigonal bipyramidal",
+   "3 lone pairs",
+   "equatorial",
+   "linear"
+  ],
+  "source": "Unit 1 test Q25b,d,f",
+  "created": "2026-10-08"
+ },
+ {
+  "id": "chem-2026-10-08-06",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Boiling point and LDF",
+  "type": "because",
+  "prompt": "Rank hexane, 3-methylpentane and propane by boiling point, highest first, and explain.",
+  "answer": "Hexane > 3-methylpentane > propane. More carbons and a longer, unbranched chain give more surface area, so London dispersion forces between molecules are stronger and more energy is needed to separate them. Branching reduces surface area.",
+  "keywords": [
+   "London dispersion",
+   "surface area",
+   "branching",
+   "more energy"
+  ],
+  "source": "Practice quiz 3, 2026-10-08",
+  "created": "2026-10-08"
+ },
+ {
+  "id": "chem-2026-10-06-01",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Naming tie rule",
+  "type": "worked",
+  "prompt": "Name CH3-CH2-CH(CH3)-CH2-CH(CH2CH3)-CH2-CH3 and state the rule that decides the numbering.",
+  "answer": "3-ethyl-5-methylheptane. Both directions give 3 and 5, so the substituent first in the alphabet (ethyl) gets the lower number.",
+  "keywords": [
+   "3-ethyl-5-methylheptane",
+   "alphabetical",
+   "tie"
+  ],
+  "source": "Notes 2026-10-06",
+  "created": "2026-10-06"
+ },
+ {
+  "id": "chem-2026-10-06-02",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Naming alkenes",
+  "type": "worked",
+  "prompt": "Name CH2=CH-CH2-CH(CH3)-CH3. Why doesn't the methyl group get the lowest number?",
+  "answer": "4-methylpent-1-ene. The double bond takes numbering priority over alkyl groups, so numbering starts at the end nearest the double bond.",
+  "keywords": [
+   "4-methylpent-1-ene",
+   "double bond",
+   "priority"
+  ],
+  "source": "Notes 2026-10-06",
+  "created": "2026-10-06"
+ },
+ {
+  "id": "chem-2026-10-06-03",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Geometric isomers",
+  "type": "because",
+  "prompt": "Why are cis- and trans-but-2-ene two different compounds, while butane has no cis/trans forms?",
+  "answer": "The pi bond in C=C prevents rotation, locking the CH3 groups on the same side (cis) or opposite sides (trans). Butane has only single sigma bonds, which rotate freely.",
+  "keywords": [
+   "pi bond",
+   "no rotation",
+   "same side",
+   "opposite side",
+   "free rotation"
+  ],
+  "source": "Notes 2026-10-06",
+  "created": "2026-10-06"
+ },
+ {
+  "id": "chem-2026-10-06-04",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Hydrocarbon families",
+  "type": "keyword",
+  "prompt": "Give the general formula and suffix for alkanes, alkenes and alkynes. Which family is saturated, and what does that mean?",
+  "answer": "Alkane CnH2n+2, -ane. Alkene CnH2n, -ene. Alkyne CnH2n-2, -yne. Alkanes are saturated: single bonds only, maximum number of hydrogens.",
+  "keywords": [
+   "CnH2n+2",
+   "-ane",
+   "CnH2n",
+   "-ene",
+   "CnH2n-2",
+   "-yne",
+   "saturated",
+   "maximum hydrogens"
+  ],
+  "source": "Notes 2026-10-06",
+  "created": "2026-10-06"
+ },
+ {
+  "id": "chem-2026-10-06-05",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Aliphatic vs aromatic",
+  "type": "because",
+  "prompt": "Is cyclohexane aromatic? Justify.",
+  "answer": "No. Aromatic means the molecule contains a benzene ring. Cyclohexane is a cycloalkane, which is aliphatic.",
+  "keywords": [
+   "benzene",
+   "cycloalkane",
+   "aliphatic"
+  ],
+  "source": "Notes 2026-09-30",
+  "created": "2026-10-06"
+ },
+ {
+  "id": "chem-2026-10-06-06",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Structural isomers",
+  "type": "because",
+  "prompt": "Why can't the molecular formula C5H12 identify a single compound?",
+  "answer": "A molecular formula gives only the type and number of atoms. C5H12 has structural isomers: same molecular formula, atoms bonded in a different sequence (pentane, 2-methylbutane, 2,2-dimethylpropane).",
+  "keywords": [
+   "type and number of atoms",
+   "structural isomers",
+   "different sequence"
+  ],
+  "source": "Notes 2026-09-30",
+  "created": "2026-10-06"
+ }
 ]
