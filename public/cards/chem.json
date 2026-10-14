@@ -244,14 +244,14 @@
   "unit": "Organic",
   "topic": "Oxidation of alcohols",
   "type": "because",
-  "prompt": "Predict the product when each is oxidized: (a) propan-1-ol (b) propan-2-ol (c) 2-methylpropan-2-ol. Justify (c).",
-  "answer": "(a) Primary: aldehyde, then carboxylic acid. (b) Secondary: ketone. (c) Tertiary: no reaction, because the carbon bonded to the OH has no C-H bond to oxidize. Oxidation means more bonds to oxygen, fewer bonds to hydrogen.",
+  "prompt": "State the general rule for oxidizing primary, secondary and tertiary alcohols. Why does a tertiary alcohol not react?",
+  "answer": "Primary: aldehyde, then carboxylic acid. Secondary: ketone. Tertiary: no reaction, because the carbon bonded to the OH has no C-H bond. Oxidation means more bonds to oxygen, fewer bonds to hydrogen.",
   "keywords": [
    "aldehyde",
    "carboxylic acid",
    "ketone",
-   "no reaction",
-   "no C-H bond"
+   "no C-H bond",
+   "more bonds to oxygen"
   ],
   "source": "07-Alcohols ANNOTATED",
   "created": "2026-10-14"
