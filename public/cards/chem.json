@@ -205,5 +205,106 @@
   ],
   "source": "Notes 2026-09-30",
   "created": "2026-10-06"
+ },
+ {
+  "id": "chem-2026-10-14-01",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Naming alcohols, the e rule",
+  "type": "worked",
+  "prompt": "Name HO-CH2-CH2-CH2-OH. Why is the e of propane kept here but dropped in butan-1-ol?",
+  "answer": "Propane-1,3-diol. Before -diol, a vowel is followed by a consonant, so the e is kept. Before -ol, two vowels would sit back to back, so the e is dropped.",
+  "keywords": [
+   "propane-1,3-diol",
+   "consonant",
+   "two vowels"
+  ],
+  "source": "07-Alcohols ANNOTATED",
+  "created": "2026-10-14"
+ },
+ {
+  "id": "chem-2026-10-14-02",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Classifying alcohols",
+  "type": "because",
+  "prompt": "Classify butan-2-ol as primary, secondary or tertiary, and justify.",
+  "answer": "Secondary. The carbon bonded to the OH is an internal carbon and has one C-H bond.",
+  "keywords": [
+   "secondary",
+   "carbon bonded to the OH",
+   "one C-H bond"
+  ],
+  "source": "07-Alcohols ANNOTATED",
+  "created": "2026-10-14"
+ },
+ {
+  "id": "chem-2026-10-14-03",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Oxidation of alcohols",
+  "type": "because",
+  "prompt": "Predict the product when each is oxidized: (a) propan-1-ol (b) propan-2-ol (c) 2-methylpropan-2-ol. Justify (c).",
+  "answer": "(a) Primary: aldehyde, then carboxylic acid. (b) Secondary: ketone. (c) Tertiary: no reaction, because the carbon bonded to the OH has no C-H bond to oxidize. Oxidation means more bonds to oxygen, fewer bonds to hydrogen.",
+  "keywords": [
+   "aldehyde",
+   "carboxylic acid",
+   "ketone",
+   "no reaction",
+   "no C-H bond"
+  ],
+  "source": "07-Alcohols ANNOTATED",
+  "created": "2026-10-14"
+ },
+ {
+  "id": "chem-2026-10-14-04",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Markovnikov's rule",
+  "type": "worked",
+  "prompt": "But-1-ene reacts with HBr. Name the major product and state the rule that decides it.",
+  "answer": "2-bromobutane (1-bromobutane is the minor product). Markovnikov's rule: the H adds to the double-bond carbon that already has more hydrogens (the rich get richer).",
+  "keywords": [
+   "2-bromobutane",
+   "Markovnikov",
+   "more hydrogens"
+  ],
+  "source": "06-Haloalkanes ANNOTATED",
+  "created": "2026-10-14"
+ },
+ {
+  "id": "chem-2026-10-14-05",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Addition vs substitution",
+  "type": "because",
+  "prompt": "Why does but-1-ene react with Br2 by addition, while methane needs UV light and reacts by substitution?",
+  "answer": "The alkene's pi bond takes less energy to break, so Br adds across the double bond (one product, 1,2-dibromobutane). Methane has no pi bond, so UV light supplies the energy and Br replaces H, giving multiple products.",
+  "keywords": [
+   "pi bond",
+   "less energy",
+   "addition",
+   "UV light",
+   "replaces"
+  ],
+  "source": "06-Haloalkanes ANNOTATED",
+  "created": "2026-10-14"
+ },
+ {
+  "id": "chem-2026-10-14-06",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Elimination",
+  "type": "because",
+  "prompt": "Bromoethane is heated with sodium ethoxide. Name the reaction type, give the organic product, and say what is removed.",
+  "answer": "Elimination. H and Br are removed from neighbouring carbons, forming ethene (plus ethanol and NaBr). Sodium ethoxide acts as a strong base.",
+  "keywords": [
+   "elimination",
+   "ethene",
+   "H and Br",
+   "strong base"
+  ],
+  "source": "06-Haloalkanes ANNOTATED",
+  "created": "2026-10-14"
  }
 ]
