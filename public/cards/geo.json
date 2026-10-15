@@ -1,1 +1,103 @@
-[]
+[
+  {
+    "id": "geo-2026-10-15-01",
+    "deck": "geo",
+    "unit": "Poverty",
+    "topic": "LICO limits",
+    "type": "evaluate",
+    "prompt": "To what extent is LICO a fair way to count poor Canadians?",
+    "answer": "1. To a small extent.\n2. Evidence: LICO flags families who spend 20 points more of gross income on food, shelter and clothing than the average family; in 2020 that meant over 63 percent.\n3. Other side: the media use it because nothing else existed.\n4. Holds because Statistics Canada itself says LICO measures income inequality, not poverty, and the line rises as the economy grows.",
+    "keywords": [
+      "small extent",
+      "63",
+      "income inequality",
+      "nothing else"
+    ],
+    "source": "Notes 2026-09-30",
+    "created": "2026-10-15"
+  },
+  {
+    "id": "geo-2026-10-15-02",
+    "deck": "geo",
+    "unit": "Poverty",
+    "topic": "Core periphery vs Rostow",
+    "type": "evaluate",
+    "prompt": "To what extent does Wallerstein's core periphery model explain the widening gap between rich and poor countries better than Rostow's stages?",
+    "answer": "1. To a large extent.\n2. Evidence: in 2017, 80 percent of new wealth went to the richest 1 percent and the poorest 50 percent saw no increase.\n3. Other side: Rostow says every country can climb from traditional society to mass consumption, so the gap should close.\n4. Holds because the core keeps capital, power and knowledge through trade and economic dependency, so the periphery stays a weak raw material exporter.",
+    "keywords": [
+      "large extent",
+      "80",
+      "dependency",
+      "Rostow"
+    ],
+    "source": "Notes 2026-09-28; Notes 2026-10-06",
+    "created": "2026-10-15"
+  },
+  {
+    "id": "geo-2026-10-15-03",
+    "deck": "geo",
+    "unit": "Poverty",
+    "topic": "India physical geography",
+    "type": "because",
+    "prompt": "Explain how India's physical geography contributes to its poverty. Use one number.",
+    "answer": "India's tropical climate and unstable weather hold it back because diseases like malaria spread easily and monsoons, droughts and cyclones damage farming. 75 percent of India's poor live in rural areas, where farming is most exposed.",
+    "keywords": [
+      "malaria",
+      "monsoons",
+      "75",
+      "rural"
+    ],
+    "source": "Notes 2026-10-01",
+    "created": "2026-10-15"
+  },
+  {
+    "id": "geo-2026-10-15-04",
+    "deck": "geo",
+    "unit": "Poverty",
+    "topic": "Canada vs India geography",
+    "type": "evaluate",
+    "prompt": "To what extent does physical geography explain why Canada is richer than India?",
+    "answer": "1. To some extent.\n2. Evidence: both are democratic and capitalist with top cities on waterways, but Canada's temperate climate and good soil mean a healthier workforce and food security, while a quarter of Indians live below the 0.40 dollar a day government line.\n3. Other side: India's gap between rich and poor is huge and growing, so how wealth is shared matters, not just climate.\n4. Holds because the political and economic systems match, so the physical differences are what is left to explain the gap.",
+    "keywords": [
+      "some extent",
+      "temperate",
+      "quarter",
+      "gap"
+    ],
+    "source": "Notes 2026-09-25; Notes 2026-10-01",
+    "created": "2026-10-15"
+  },
+  {
+    "id": "geo-2026-10-15-05",
+    "deck": "geo",
+    "unit": "Poverty",
+    "topic": "Rostow stages 2 and 3",
+    "type": "because",
+    "prompt": "Which Rostow stage has a strong central government and entrepreneurs exploiting resources, and what has to happen to reach the next stage?",
+    "answer": "Stage 2, preconditions to take off. Take off then needs capital investment and manufacturing until business reaches 10 percent of income and people save money.",
+    "keywords": [
+      "preconditions",
+      "capital investment",
+      "manufacturing",
+      "10"
+    ],
+    "source": "Notes 2026-10-06",
+    "created": "2026-10-15"
+  },
+  {
+    "id": "geo-2026-10-15-06",
+    "deck": "geo",
+    "unit": "Poverty",
+    "topic": "Women's employment access",
+    "type": "because",
+    "prompt": "Explain how limited access to employment leaves women relatively poor.",
+    "answer": "Barriers like discrimination, social norms or unjust laws keep women out of jobs they could do, so their income falls below what is customary in their society. The gender wage gap adds to it because men are paid more for the same work.",
+    "keywords": [
+      "barriers",
+      "customary",
+      "wage gap"
+    ],
+    "source": "Notes 2026-09-28",
+    "created": "2026-10-15"
+  }
+]
