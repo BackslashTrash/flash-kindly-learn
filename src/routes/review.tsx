@@ -57,6 +57,7 @@ function CardView({ card, left }: { card: Card; left: number }) {
   const [drew, setDrew] = useState(false);
   const [revealed, setRevealed] = useState(false);
   const [said, setSaid] = useState<Set<string>>(new Set());
+  const [pending, setPending] = useState<"right" | "wrong" | null>(null);
   const box = useRef<HTMLTextAreaElement>(null);
   const touch = useRef<number | null>(null);
   const speech = useSpeech(settings.lang, (t) => {
@@ -75,14 +76,20 @@ function CardView({ card, left }: { card: Card; left: number }) {
     mode === "aloud" || mode === "sketch" ? said.has(k) : hasKeyword(answer, k),
   );
   const missed = card.keywords.filter((_, i) => !hits[i]);
-  const suggestWrong = missed.length > 0;
+  const manual = mode === "aloud" || mode === "sketch";
+  // Self-marked answers: no suggestion until the user has tapped what they said.
+  const suggestWrong = manual ? (said.size > 0 ? missed.length > 0 : null) : missed.length > 0;
 
   const reveal = () => {
     if (!canReveal) return;
     speech.stop();
     setRevealed(true);
   };
-  const finish = (r: "right" | "wrong") => {
+  const finish = (r: "right" | "wrong", confirmed = false) => {
+    if (manual && said.size === 0 && card.keywords.length > 0 && !confirmed) {
+      setPending(r);
+      return;
+    }
     grade(card, r, missed, mode);
     sync();
   };
@@ -90,6 +97,7 @@ function CardView({ card, left }: { card: Card; left: number }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const typing = document.activeElement === box.current;
+      if (pending) return;
       if (!revealed && e.code === "Space" && !typing) {
         e.preventDefault();
         reveal();
@@ -116,7 +124,7 @@ function CardView({ card, left }: { card: Card; left: number }) {
         className={`brut bg-card p-5 ${revealed ? "flip-in" : ""}`}
         onTouchStart={(e) => (touch.current = e.touches[0]?.clientX ?? null)}
         onTouchEnd={(e) => {
-          if (!revealed || touch.current == null) return;
+          if (!revealed || pending || touch.current == null) return;
           const dx = (e.changedTouches[0]?.clientX ?? touch.current) - touch.current;
           if (dx > 80) finish("right");
           else if (dx < -80) finish("wrong");
@@ -222,8 +230,10 @@ function CardView({ card, left }: { card: Card; left: number }) {
               </ol>
             ) : (
               <div className="flex flex-wrap gap-2">
+                {manual && (
+                  <p className="w-full font-bold">Tap every keyword you said, then grade.</p>
+                )}
                 {card.keywords.map((k, i) => {
-                  const manual = mode === "aloud" || mode === "sketch";
                   const cls = manual ? (hits[i] ? "bg-right" : "bg-neutral") : hits[i] ? "bg-right" : "bg-wrong";
                   return (
                     <button
@@ -243,9 +253,6 @@ function CardView({ card, left }: { card: Card; left: number }) {
                     </button>
                   );
                 })}
-                {(mode === "aloud" || mode === "sketch") && (
-                  <p className="w-full text-sm text-muted-foreground">Tap the ones you got.</p>
-                )}
               </div>
             )}
             {card.source && <p className="text-sm text-muted-foreground">Source: {card.source}</p>}
@@ -253,17 +260,37 @@ function CardView({ card, left }: { card: Card; left: number }) {
         )}
       </div>
 
-      {revealed && (
+      {revealed && pending && (
+        <div className="brut mt-6 space-y-3 bg-card p-4">
+          <p className="font-bold">You didn't tap any keywords. Mark all as missed?</p>
+          <div className="grid grid-cols-2 gap-4">
+            <button onClick={() => setPending(null)} className="btn press">
+              Go back and tap
+            </button>
+            <button
+              onClick={() => {
+                const r = pending;
+                setPending(null);
+                finish(r, true);
+              }}
+              className="btn press bg-wrong text-on-accent"
+            >
+              Yes, I got none
+            </button>
+          </div>
+        </div>
+      )}
+      {revealed && !pending && (
         <div className="mt-6 grid grid-cols-2 gap-4">
           <button
             onClick={() => finish("wrong")}
-            className={`btn press bg-wrong text-on-accent ${suggestWrong ? "outline outline-4 outline-offset-4 outline-ink" : ""}`}
+            className={`btn press bg-wrong text-on-accent ${suggestWrong === true ? "outline outline-4 outline-offset-4 outline-ink" : ""}`}
           >
             Wrong <span className="hidden text-sm md:inline">(1)</span>
           </button>
           <button
             onClick={() => finish("right")}
-            className={`btn press bg-right text-on-accent ${!suggestWrong ? "outline outline-4 outline-offset-4 outline-ink" : ""}`}
+            className={`btn press bg-right text-on-accent ${suggestWrong === false ? "outline outline-4 outline-offset-4 outline-ink" : ""}`}
           >
             Right <span className="hidden text-sm md:inline">(2)</span>
           </button>
@@ -301,7 +328,8 @@ function SessionEnd({ deck }: { deck: string }) {
   const summary = [
     `RECALL SUMMARY ${today()} ${deck}`,
     ...revs.map(
-      (r) => `${r.cardId} | ${r.result}${r.result === "wrong" && r.missed.length ? ` | missed: ${r.missed.join(", ")}` : ""}`,
+      (r) =>
+        `${r.cardId} | ${r.result}${r.mode && r.mode !== "typed" ? ` | ${r.mode}` : ""}${r.result === "wrong" && r.missed.length ? ` | missed: ${r.missed.join(", ")}` : ""}`,
     ),
     `TOTAL ${right}/${revs.length}`,
   ].join("\n");

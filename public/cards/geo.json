@@ -5,10 +5,10 @@
     "unit": "Poverty",
     "topic": "LICO limits",
     "type": "evaluate",
-    "prompt": "To what extent is LICO a fair way to count poor Canadians?",
-    "answer": "1. To a small extent.\n2. Evidence: LICO flags families who spend 20 points more of gross income on food, shelter and clothing than the average family; in 2020 that meant over 63 percent.\n3. Other side: the media use it because nothing else existed.\n4. Holds because Statistics Canada itself says LICO measures income inequality, not poverty, and the line rises as the economy grows.",
+    "prompt": "How well does LICO measure poverty in Canada? Justify your judgement.",
+    "answer": "1. Poorly.\n2. Evidence: LICO flags families who spend 20 points more of gross income on food, shelter and clothing than the average family; in 2020 that meant over 63 percent.\n3. Other side: the media use it because nothing else existed.\n4. Holds because Statistics Canada itself says LICO measures income inequality, not poverty, and the line rises as the economy grows.",
     "keywords": [
-      "small extent",
+      "poorly",
       "63",
       "income inequality",
       "nothing else"
@@ -56,10 +56,10 @@
     "unit": "Poverty",
     "topic": "Canada vs India geography",
     "type": "evaluate",
-    "prompt": "To what extent does physical geography explain why Canada is richer than India?",
-    "answer": "1. To some extent.\n2. Evidence: both are democratic and capitalist with top cities on waterways, but Canada's temperate climate and good soil mean a healthier workforce and food security, while a quarter of Indians live below the 0.40 dollar a day government line.\n3. Other side: India's gap between rich and poor is huge and growing, so how wealth is shared matters, not just climate.\n4. Holds because the political and economic systems match, so the physical differences are what is left to explain the gap.",
+    "prompt": "Is physical geography the main reason Canada is richer than India? Justify your judgement.",
+    "answer": "1. Partly.\n2. Evidence: both are democratic and capitalist with top cities on waterways, but Canada's temperate climate and good soil mean a healthier workforce and food security, while a quarter of Indians live below the 0.40 dollar a day government line.\n3. Other side: India's gap between rich and poor is huge and growing, so how wealth is shared matters, not just climate.\n4. Holds because the political and economic systems match, so the physical differences are what is left to explain the gap.",
     "keywords": [
-      "some extent",
+      "partly",
       "temperate",
       "quarter",
       "gap"
