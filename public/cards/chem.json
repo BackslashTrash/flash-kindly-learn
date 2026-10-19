@@ -306,5 +306,104 @@
   ],
   "source": "06-Haloalkanes ANNOTATED",
   "created": "2026-10-14"
+ },
+ {
+  "id": "chem-2026-10-19-01",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Hydrogen bonding condition",
+  "type": "because",
+  "prompt": "Chloromethane is polar. Can it form hydrogen bonds between its molecules? Justify, and name its strongest IMF.",
+  "answer": "No. Hydrogen bonding needs an H bonded directly to N, O or F. In chloromethane every H is bonded to C. Strongest IMF: dipole-dipole, from the polar C-Cl bond.",
+  "keywords": [
+   "no",
+   "N O or F",
+   "bonded to C",
+   "dipole-dipole"
+  ],
+  "source": "Practice diagnostic 2026-10-19 Q2",
+  "created": "2026-10-19"
+ },
+ {
+  "id": "chem-2026-10-19-02",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Haloalkane elimination",
+  "type": "worked",
+  "prompt": "1-chloropropane is heated with sodium ethoxide. Name the reaction type and the organic product.",
+  "answer": "Elimination. Sodium ethoxide is a strong base; H and Cl are removed from neighbouring carbons, forming propene (plus ethanol and NaCl).",
+  "keywords": [
+   "elimination",
+   "propene",
+   "strong base"
+  ],
+  "source": "Practice diagnostic 2026-10-19 Q1",
+  "created": "2026-10-19"
+ },
+ {
+  "id": "chem-2026-10-19-03",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Alcohol elimination",
+  "type": "worked",
+  "prompt": "Butan-1-ol is heated with sulfuric acid. Name the reaction type and both products.",
+  "answer": "Elimination (dehydration). Alcohol with H+ and heat gives alkene + water: but-1-ene + water.",
+  "keywords": [
+   "elimination",
+   "but-1-ene",
+   "water"
+  ],
+  "source": "Practice diagnostic 2026-10-19 Q3",
+  "created": "2026-10-19"
+ },
+ {
+  "id": "chem-2026-10-19-04",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Base hydrolysis of esters",
+  "type": "because",
+  "prompt": "Methyl propanoate is heated with NaOH(aq). Name the reaction type and both products, and say whether it is reversible.",
+  "answer": "Base hydrolysis. Products: sodium propanoate (a carboxylate salt) and methanol. It goes to completion because the base is a reactant; acid hydrolysis is the reversible one.",
+  "keywords": [
+   "base hydrolysis",
+   "carboxylate salt",
+   "methanol",
+   "completion"
+  ],
+  "source": "Practice diagnostic 2026-10-19 Q7",
+  "created": "2026-10-19"
+ },
+ {
+  "id": "chem-2026-10-19-05",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "Amide condensation",
+  "type": "worked",
+  "prompt": "Ethanoic acid reacts with ethanamine. Name the reaction type and both products.",
+  "answer": "Condensation. Carboxylic acid + amine gives an amide + water: N-ethylethanamide + water.",
+  "keywords": [
+   "condensation",
+   "N-ethylethanamide",
+   "water"
+  ],
+  "source": "Practice diagnostic 2026-10-19 Q9",
+  "created": "2026-10-19"
+ },
+ {
+  "id": "chem-2026-10-19-06",
+  "deck": "chem",
+  "unit": "Organic",
+  "topic": "IMF to boiling point",
+  "type": "because",
+  "prompt": "Butanoic acid boils much higher than butanal. Explain, finishing the chain to boiling point.",
+  "answer": "The acid's O-H lets it form hydrogen bonds; butanal (C=O, no O-H) has only dipole-dipole. Hydrogen bonds are stronger, so more energy is needed to separate the molecules, so a higher boiling point.",
+  "keywords": [
+   "hydrogen bonds",
+   "dipole-dipole",
+   "more energy",
+   "separate"
+  ],
+  "source": "Practice diagnostic 2026-10-19 Q6, Q8; Quiz 3 Q3",
+  "created": "2026-10-19"
  }
 ]
